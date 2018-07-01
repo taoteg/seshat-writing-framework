@@ -244,3 +244,12 @@ In practice what this means is that you need to maintain a consistent set of ter
 ### TODO:
 
 - Break README.md into subdocuments and create build file.
+
+
+### One Liner CLI Shortcuts
+
+#### clone the framework, rename it, add a new remote, push the changes (requires the new repo already be created and ready to be accessed - test collaborator settings as well if using those), change readme, commit changes and display status.
+
+__NOTE: Replace repo-name with a syntactically valid name for the repo folder and the project title.__
+
+```NEW_REPO_NAME=repo-name && git clone https://github.com/taoteg/seshat-writing-framework.git $NEW_REPO_NAME && cd $NEW_REPO_NAME && git remote rename origin upstream && git remote add origin git@github.com:taoteg/$NEW_REPO_NAME.git && git fetch origin && git push -u origin master && cp README.md SESHAT_README.md && rm README.md && touch README.md && echo "# $(basename `git rev-parse --show-toplevel`)" > README.md && git add . && git commit -m "Establishing new project for $NEW_REPO_NAME" && git push && git status```
