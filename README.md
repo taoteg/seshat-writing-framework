@@ -253,3 +253,8 @@ In practice what this means is that you need to maintain a consistent set of ter
 __NOTE: Replace repo-name with a syntactically valid name for the repo folder and the project title.__
 
 ```NEW_REPO_NAME=repo-name && git clone https://github.com/taoteg/seshat-writing-framework.git $NEW_REPO_NAME && cd $NEW_REPO_NAME && git remote rename origin upstream && git remote add origin git@github.com:taoteg/$NEW_REPO_NAME.git && git fetch origin && git push -u origin master && cp README.md SESHAT_README.md && rm README.md && touch README.md && echo "# $(basename `git rev-parse --show-toplevel`)" > README.md && git add . && git commit -m "Establishing new project for $NEW_REPO_NAME" && git push && git status```
+
+
+#### pull in all upstream changes to framework.
+
+```git fetch upstream && git pull upstream master && git add . && git commit -m "Pulled upstream changes into master." && git push && git status```
