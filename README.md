@@ -257,4 +257,6 @@ __NOTE: Replace repo-name with a syntactically valid name for the repo folder an
 
 #### pull in all upstream changes to framework.
 
+__WARNING: DO NOT USE YET! I need to work out how to not clobber th exsiting content with changes. Thinking it through, probably won't really be much to pull anyway. Not once the build scripts are in place.__
+
 ```git fetch upstream && git pull upstream master && git add . && git commit -m "Pulled upstream changes into master." && git push && git status```
