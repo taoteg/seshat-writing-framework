@@ -257,6 +257,18 @@ __NOTE: Replace repo-name with a syntactically valid name for the repo folder an
 
 #### pull in all upstream changes to framework.
 
-__WARNING: DO NOT USE YET! I need to work out how to not clobber th exsiting content with changes. Thinking it through, probably won't really be much to pull anyway. Not once the build scripts are in place.__
+__WARNING: DO NOT USE YET! I need to work out how to not clobber the newly created content with upstream changes.__
 
 ```git fetch upstream && git pull upstream master && git add . && git commit -m "Pulled upstream changes into master." && git push && git status```
+
+- Thinking it through, there probably won't really be anything to pull from upstream.
+- Once the build scripts are in place, the only changes likely would be breaking because the very structure of the files is the thing.
+- I could develop a branching strategy to allow moving master into upstream in the cloned repo and use that as a way for users to pull in upstream changes, but regardless they will end up doing a file by file merge conflict resolution. Does keep it off master that way at least.
+- Have to decide how much effort this is worth. Does it enhance much?
+- Consider Seshat to still be in an alpha state.
+- Using it for TW, TOMATWK and ACH will help kick the bugs out.
+- Once its as polished as possible (read as automated), get some early users.
+
+
+
+-
