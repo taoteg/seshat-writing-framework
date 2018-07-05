@@ -235,6 +235,7 @@ In practice what this means is that you need to maintain a consistent set of ter
 - [Markdown 2 PDF](https://atom.io/packages/markdown-pdf)
 - [Markdown PDF for NPM](https://github.com/alanshaw/markdown-pdf)
 - [Typsesetting AUtomation with LaTex](http://mrzool.cc/writing/typesetting-automation/)
+- [Basic Book Design](https://en.wikibooks.org/wiki/Basic_Book_Design/Font)
 - [Git Tagging Basics](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
 - [Git Tag](https://git-scm.com/docs/git-tag)
 - [Elastic Search](https://www.elastic.co/products/elasticsearch)
